@@ -1,0 +1,70 @@
+/* Reset básico para que ocupe toda la pantalla */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+p {
+    margin-top: 5px;
+}
+
+/* El mapa DEBE tener una altura definida para que se vea */
+#map {
+    height: 70vh; /* Ocupa el 70% del alto de la ventana */
+    width: 100%;
+    z-index: 1; /* Asegura que esté por debajo de otros elementos si los hubiera */
+}
+
+/* Panel de controles */
+#controls-panel {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filters {
+    display: flex;
+    gap: 20px;
+}
+
+#filters label {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo para las fichas informativas (Popups de Leaflet) */
+.leaflet-popup-content h3 {
+    margin-top: 0;
+    color: #0077b6;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.leaflet-popup-content strong {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+}
